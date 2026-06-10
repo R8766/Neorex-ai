@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>AI Multi-Agent Chat</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 <div class="chat-container">
 
     <div class="header">
-       <img src="Neorex.png" class="logo">
+       <img src="{{ url_for('static', filename='Neorex.png') }}" class="logo">
        <h2>Neorex AI</h2>
     </div>
 
@@ -23,7 +23,7 @@
 
 </div>
 
-<script src="script.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
 </html>

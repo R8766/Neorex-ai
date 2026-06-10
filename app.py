@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import requests
 from dotenv import load_dotenv
@@ -64,7 +64,7 @@ def clean_output(text):
 # -------------------------------
 @app.route("/")
 def home():
-    return "Neorex AI Backend is Running 🚀"
+    return render_template("index.html")
 
 
 @app.route("/agent", methods=["POST"])
