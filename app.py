@@ -62,6 +62,11 @@ def clean_output(text):
 # -------------------------------
 # MAIN ROUTE
 # -------------------------------
+@app.route("/")
+def home():
+    return "Neorex AI Backend is Running 🚀"
+
+
 @app.route("/agent", methods=["POST"])
 def agent():
     data = request.json
